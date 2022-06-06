@@ -1,2 +1,2 @@
-Portalseite für MandaiWorld.
---> [Liveview](https://mandaimc.net)
+# Portalseite für MandaiWorld.
+--> [Hier ansehen](https://mandaimc.net)
