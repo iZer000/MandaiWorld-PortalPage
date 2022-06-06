@@ -1,22 +1,6 @@
 window.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("hero").scrollIntoView();
+    document.getElementById("primary").scrollIntoView();
     document.getElementById("copy").innerHTML = "© " + new Date().getFullYear() + " MandaiWorld";
-});
-
-var getWidth = function() { // credit to travis on stack overflow
-    return Math.max(
-        document.body.scrollWidth,
-        document.documentElement.scrollWidth,
-        document.body.offsetWidth,
-        document.documentElement.offsetWidth,
-        document.documentElement.clientWidth
-    );
-};
-
-if (getWidth() < 400) $.firefly({
-    minPixel: 1,
-    maxPixel: 2,
-    total: 20
 });
 
 
@@ -78,7 +62,7 @@ if (getWidth() < 400) $.firefly({
 
 addWheelListener( document, function( e ) { 
     if (e.deltaY < 0) {
-        document.getElementById("hero").scrollIntoView();
+        document.getElementById("primary").scrollIntoView();
     } else {
         document.getElementById("secondary").scrollIntoView();
     }
